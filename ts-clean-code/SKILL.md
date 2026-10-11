@@ -1,9 +1,9 @@
 ---
-name: clean-code
+name: ts-clean-code
 description: Use when writing, modifying, reviewing, or refactoring JavaScript or TypeScript code (.{js,jsx,ts,tsx}) to apply rules for naming, conditions, loops, array iteration, and function or method design.
 ---
 
-# Clean Code
+# TS Clean Code
 
 ## Index
 
