@@ -1,9 +1,11 @@
 ---
-name: fractal-module-architecture
-description: Use when creating or reorganizing application architecture into recursive feature modules with top-level command/query actions, or interchangeable providers hidden behind a module's public API.
+name: nestjs-fractal-module-architecture
+description: Use when creating or reorganizing NestJS application architecture into recursive feature modules with top-level command/query actions, or interchangeable providers hidden behind a module's public API.
 ---
 
-# Fractal Module Architecture
+# Fractal Module Architecture for NestJS
+
+Apply this architecture to NestJS applications.
 
 - Keep `{actions,modules,common}/` at the application source root. Only `modules/` and `common/` may recur within modules; nest submodules by responsibility.
 - `modules/<feature>/`: reusable or potentially reusable feature logic; keep related files together, not in root-level role folders.
@@ -40,3 +42,11 @@ description: Use when creating or reorganizing application architecture into rec
 ├── <feature>.config.ts
 └── <feature>.module.ts
 ```
+
+## NestJS References
+
+Use the official documentation for NestJS implementation details; this skill's dependency boundaries remain the architectural constraints.
+
+- [Modules](https://docs.nestjs.com/modules): module metadata, encapsulation, imports, and exports.
+- [Providers](https://docs.nestjs.com/providers): dependency injection and provider registration.
+- [Custom providers](https://docs.nestjs.com/fundamentals/custom-providers): injection tokens and factory providers for interchangeable implementations.
